@@ -2,6 +2,7 @@ pipeline {
 	agent none
 
 	stages {
+		stage ('Make and Maven') {
 		parallel {
 		stage ('c_code') {
 			agent { label 'node1' }
@@ -19,7 +20,7 @@ pipeline {
 				sh 'mvn clean install'
 			}
 		}
-		
-		}	
+	     }  
+	   }	
 	}
 }
