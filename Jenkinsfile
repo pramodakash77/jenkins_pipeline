@@ -5,7 +5,7 @@ pipeline {
 		stage ('STAGE 1') {
 			agent { label 'slaveforc' }
 			steps {
-				echo 'This is slaveforc with STAGE 1'
+				echo 'This is slaveforc node with STAGE 1'
 				sh 'sleep 10'
 			}	
 		}
