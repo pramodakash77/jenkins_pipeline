@@ -2,7 +2,7 @@ pipeline {
 	agent none
 
 	stages {
-		stage ('make') {
+		stage ('c_code') {
 			agent { label 'node1' }
 			steps {
 			  	git 'https://github.com/pramodakash77/c_code.git'
