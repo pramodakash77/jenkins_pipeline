@@ -2,6 +2,7 @@ pipeline {
 	agent none
 
 	stages {
+		parallel {
 		stage ('c_code') {
 			agent { label 'node1' }
 			steps {
@@ -19,5 +20,6 @@ pipeline {
 			}
 		}
 		
+		}	
 	}
 }
