@@ -2,16 +2,16 @@ pipeline {
 	agent { label 'master' }
  
 	stages {
-		stage ('makefile') {
+		stage ('c_code') {
 			steps { 
-				build 'c-project'
+				build 'c_PROGRAME'
 				//*echo 'This is slaveforc node with STAGE 1'
 				//sh 'sleep 10'
 			}	
 		}
-		stage ('maven') {
+		stage ('java_code') {
 			steps {
-				build 'job2'
+				build 'java_programe'
 				//echo 'This is slaveforjava with STAGE 2'
 				//sh 'sleep 10'
 			}	
