@@ -5,14 +5,14 @@ pipeline {
 		stage ('c_code') {
 			steps { 
 				build 'c_PROGRAME'
-				//*echo 'This is slaveforc node with STAGE 1'
+				//*echo 'This  slaveforc node with STAGE 1'
 				//sh 'sleep 10'
 			}	
 		}
 		stage ('java_code') {
 			steps {
 				build 'java_programe'
-				//echo 'This is slaveforjava with STAGE 2'
+				//echo 'This  slaveforjava with STAGE 2'
 				//sh 'sleep 10'
 			}	
 		}
