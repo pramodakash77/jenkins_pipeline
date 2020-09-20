@@ -9,7 +9,7 @@ pipeline {
 			steps {
 			  	git 'https://github.com/pramodakash77/c_code.git'
 					sh 'make'
-				echo 'This is slaveforc node with STAGE 1'
+				echo 'This slaveforc node with STAGE 1'
 						sh 'sleep 10'
 			}
 		}
